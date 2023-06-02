@@ -380,7 +380,7 @@ puedo haber pintado y luego darme cuenta del error]]></y:Label.Text>
 		<node id="n11">
 			<data key="d0">12</data>
 			<data key="d5">
-				<y:RectD X="414.3804029805492" Y="196" Width="206.9367707806537" Height="220"/>
+				<y:RectD X="414.3804029805492" Y="196" Width="206.9367707806537" Height="268"/>
 			</data>
 			<data key="d7">
 				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
@@ -388,6 +388,7 @@ puedo haber pintado y luego darme cuenta del error]]></y:Label.Text>
 						<uml:UMLClassModel stereotype="" constraint="" className="Tarjeta" attributesOpen="true" operationsOpen="true">
 							<uml:UMLClassModel.attributes>
 								<x:Array Type="sys:Object">
+									<sys:String><![CDATA[- int num]]></sys:String>
 									<sys:String><![CDATA[- float cargo]]></sys:String>
 									<sys:String><![CDATA[- String tipo (podría ser un enum)]]></sys:String>
 								</x:Array>
@@ -395,8 +396,10 @@ puedo haber pintado y luego darme cuenta del error]]></y:Label.Text>
 							<uml:UMLClassModel.operations>
 								<x:Array Type="sys:Object">
 									<sys:String><![CDATA[+ Tarjeta()]]></sys:String>
+									<sys:String><![CDATA[+ getNum(): int]]></sys:String>
 									<sys:String><![CDATA[+ getCargo(): float]]></sys:String>
 									<sys:String><![CDATA[+ getTipo(): String]]></sys:String>
+									<sys:String><![CDATA[+ setNum(int num): void]]></sys:String>
 									<sys:String><![CDATA[+ setCargo(float cargo): void]]></sys:String>
 									<sys:String><![CDATA[+ setTipo(String tipo): void]]></sys:String>
 									<sys:String><![CDATA[+ anadirCargo(float cargo): void]]></sys:String>
@@ -414,7 +417,7 @@ puedo haber pintado y luego darme cuenta del error]]></y:Label.Text>
 		<node id="n12">
 			<data key="d0">13</data>
 			<data key="d5">
-				<y:RectD X="-396.2795975807335" Y="-4" Width="312.5591951614669" Height="428"/>
+				<y:RectD X="-396.2795975807335" Y="-28" Width="312.5591951614669" Height="476"/>
 			</data>
 			<data key="d7">
 				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
@@ -428,6 +431,7 @@ puedo haber pintado y luego darme cuenta del error]]></y:Label.Text>
 									<sys:String><![CDATA[- Productos[] productos]]></sys:String>
 									<sys:String><![CDATA[- Pago pago]]></sys:String>
 									<sys:String><![CDATA[- Camarero camarero]]></sys:String>
+									<sys:String><![CDATA[- Time hora]]></sys:String>
 								</x:Array>
 							</uml:UMLClassModel.attributes>
 							<uml:UMLClassModel.operations>
@@ -439,6 +443,7 @@ puedo haber pintado y luego darme cuenta del error]]></y:Label.Text>
 									<sys:String><![CDATA[+ getProductos(): Productos[]]]></sys:String>
 									<sys:String><![CDATA[+ getPago(): Pago]]></sys:String>
 									<sys:String><![CDATA[+ getCamarero(): Camarero]]></sys:String>
+									<sys:String><![CDATA[+ getHora(): Time]]></sys:String>
 									<sys:String><![CDATA[+ setMesa(Mesa mesa): void]]></sys:String>
 									<sys:String><![CDATA[+ setComensales(int comensales): void]]></sys:String>
 									<sys:String><![CDATA[+ setRestaurante(Restaurante restaurante): void]]></sys:String>
@@ -446,6 +451,7 @@ puedo haber pintado y luego darme cuenta del error]]></y:Label.Text>
 									<sys:String><![CDATA[+ anadirProducto(Producto producto): void]]></sys:String>
 									<sys:String><![CDATA[+ setPago(Pago pago): void]]></sys:String>
 									<sys:String><![CDATA[+ setCamarero(Camarero camarero): void]]></sys:String>
+									<sys:String><![CDATA[+ setHora(TIme hora): void]]></sys:String>
 									<sys:String><![CDATA[+ dejarValoracion(int puntos, String comentario): void]]></sys:String>
 								</x:Array>
 							</uml:UMLClassModel.operations>
